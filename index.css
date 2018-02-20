@@ -34,7 +34,6 @@ h1 {
 }
 
 h2 {
-    margin: 5px 17px 0px 0px;
     color: #F5F5F5;
     font-weight: 600;
     text-align: center;
@@ -43,67 +42,38 @@ h2 {
 }
 
 p {
-    margin: 10px 17px 0px 0px;
     color: #F5F5F5;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
-
-
-}
-
-.container {
-    /* padding: 20px; */
-    padding-top: 0px;
-    height: 255px;
 }
 
 .popover {
     border-radius: 5px;
-    border-top-right-radius: 100px;
     height: 300px;
-    width: 250px;
+    width: 92%;
     padding: 10px;
+    text-align: center;
     background: rgba(38,50,56,0.95);
-    margin: 0 auto;
     margin-top: 10px;
     box-shadow: 0 10px 20px 4px rgba(0, 0, 0, 0.25);
     -webkit-user-select: none;
-    position: relative;
-    cursor: default;
+    overflow-y:auto;
 }
 
-.popover:before {
-    border-left: solid transparent 10px;
-    border-right: solid transparent 10px;
-    top: -10px;
-    content: " ";
-    height: 0;
-    left: 50%;
-    margin-left: -13px;
-    position: absolute;
-    width: 0;
+.scores {
+    height:500px;
+    overflow-y:auto;
 }
 
-.popover:after {
-    border-left: solid transparent 10px;
-    border-right: solid transparent 10px;
-    top: -9px;
-    content: " ";
-    height: 0;
-    left: 50%;
-    margin-left: -13px;
-    position: absolute;
-    width: 0;
+.scorecard {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 75px;
+    margin: 5px;
+    border: 1px solid #E1F5FE; 
+    border-radius: 5px;
 }
 
-.menu {
-    position: absolute;
-    bottom: 0;
-    height: 36px;
-    width: 100%;
-    margin-left: -10px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    text-align: right;
-}
+
+
