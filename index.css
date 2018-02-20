@@ -1,0 +1,109 @@
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Disable blue halo */
+input, textarea, select, a { outline: none; }
+
+.header {
+    margin: -10px -10px 10px -10px;
+    text-align: center;
+    height: 40px;
+    background: #DC2424;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 250px;
+}
+
+h1 {
+    margin: 0;
+    line-height: 40px;
+    background-color: #FFFFFF;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    font-size: 22px;
+}
+
+h2 {
+    margin: 5px 17px 0px 0px;
+    color: #F5F5F5;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+}
+
+p {
+    margin: 10px 17px 0px 0px;
+    color: #F5F5F5;
+    font-size: 12px;
+    text-align: center;
+
+
+}
+
+.container {
+    /* padding: 20px; */
+    padding-top: 0px;
+    height: 255px;
+}
+
+.popover {
+    border-radius: 5px;
+    border-top-right-radius: 100px;
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+    background: rgba(38,50,56,0.95);
+    margin: 0 auto;
+    margin-top: 10px;
+    box-shadow: 0 10px 20px 4px rgba(0, 0, 0, 0.25);
+    -webkit-user-select: none;
+    position: relative;
+    cursor: default;
+}
+
+.popover:before {
+    border-left: solid transparent 10px;
+    border-right: solid transparent 10px;
+    top: -10px;
+    content: " ";
+    height: 0;
+    left: 50%;
+    margin-left: -13px;
+    position: absolute;
+    width: 0;
+}
+
+.popover:after {
+    border-left: solid transparent 10px;
+    border-right: solid transparent 10px;
+    top: -9px;
+    content: " ";
+    height: 0;
+    left: 50%;
+    margin-left: -13px;
+    position: absolute;
+    width: 0;
+}
+
+.menu {
+    position: absolute;
+    bottom: 0;
+    height: 36px;
+    width: 100%;
+    margin-left: -10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: right;
+}
